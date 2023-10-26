@@ -157,6 +157,66 @@ function Start() {
   } 
   }else if (gameSelection.toLowerCase()==="b"){
     
- 
+    alert("welcome to the huddle. try to complete the huddle  ")
+    let gameB=prompt("you are off you see your first hurdle do you jump or not ")
+    if (gameB ==="jump"){
+      alert("you have cleared the first hurlde ")
+      let secondHurdle= prompt("you have arived and the next hurdle do you jump or not ")
+      if (secondHurdle ==="jump"){
+        alert("you have cleared the second hurlde ")
+        let thirdHurdle=prompt("you are at the last huddle do you jump or not ")
+        if (thirdHurdle ==="jump"){
+          alert("you have cleared the last hurdle and  won the game as first  ")
+         
+        }else if (thirdHurdle === "not "){
+          alert("you slowed down and  ended the game as 3rd ")
+          
+        }else {
+          alert("please pick an option")
+        }
+       
+      }else if (secondHurdle === "not "){
+        alert("you have slowed sown and now in 3rd ")
+        let thirdHurdle=prompt("you are at the last huddle do you jump or not ")
+        if (thirdHurdle ==="jump"){
+          alert("you have cleared the last hurdle and  won the game as first  ")
+         
+        }else if (thirdHurdle === "not "){
+          alert("you are disqualified ")
+          
+        }else {
+          alert("please pick an option")
+        }
+        
+      }else {
+        alert("please pick an option")
+      }
+     
+    }else if (gameB === "not "){
+      alert("you have slowed down and you are now in 5th place  ")
+      let secondHurdle= prompt("you have arived and the next hurdle do you jump or not ")
+      if (secondHurdle ==="jump"){
+        alert("you have cleared the second hurlde and now in 4th  ")
+        let thirdHurdle=prompt("you are at the last huddle do you jump or not ")
+        if (thirdHurdle ==="jump"){
+          alert("you have cleared the last hurdle and  won the game 2nd ")
+         
+        }else if (thirdHurdle === "not "){
+          alert("you slowed down and  ended the game as 4th ")
+          
+        }else {
+          alert("please pick an option")
+        }
+       
+      }else if (secondHurdle === "not "){
+        alert("you have been disqulified. Please try again ")
+        
+      }else {
+        alert("please pick an option")
+      }
+      
+    }else {
+      alert("please select an option")
+    }
 }
 }
